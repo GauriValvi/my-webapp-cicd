@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My CI/CD App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        .container {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 CI/CD Pipeline Demo</h1>
+        <p>Version: 1.0</p>
+        <p>Deployed automatically via AWS CodePipeline!</p>
+        <p>Build Time: <span id="time"></span></p>
+    </div>
+    <script>
+        document.getElementById('time').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
