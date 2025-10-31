@@ -15,7 +15,7 @@ phases:
       - echo Pushing to ECR...
       - docker push 376129867238.dkr.ecr.us-west-2.amazonaws.com/my-webapp:latest
       - echo Creating image definition file...
-      - printf '[{"name":"myapp-container","imageUri":"376129867238.dkr.ecr.us-west-2.amazonaws.com/my-webapp:latest"}]' > imagedefinitions.json
+      - printf '[{"name":"my-webapp","imageUri":"376129867238.dkr.ecr.us-west-2.amazonaws.com/my-webapp:latest"}]' > imagedefinitions.json
 
 artifacts:
   files:
